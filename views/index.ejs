@@ -17,9 +17,9 @@
         <div class="endpoints">
             <p>Search by country name, set the name as a last param in the URI:</p>
             <div class="code-container">
-                <code>http://localhost:5000/country/{Country-Name}</code>
+                <code><%= host %>/country/{Country-Name}</code>
                 <code>Example:</code>
-                <code>http://localhost:5000/country/mexico</code>
+                <code><%= host %>/country/mexico</code>
             </div>
             <p>The endpoint returns an array with the list of countries that matched the criteria.</p>
 
@@ -27,9 +27,9 @@
 
             <p>Fetch more information about the country.</p>
             <div class="code-container">
-                <code>http://localhost:5000/country/all/{Country-Name}</code>
+                <code><%= host %>/country/all/{Country-Name}</code>
                 <code>Example:</code>
-                <code>http://localhost:5000/country/all/mexico</code>
+                <code><%= host %>/country/all/mexico</code>
             </div>
             <p>The endpoint is more specific and returns more data.</p>
 
@@ -38,18 +38,18 @@
             <p>Search by language.</p>
             <p>Returns a list of all native countries by the given language (The language must be ISO 639-1 code).</p>
             <div class="code-container">
-                <code>http://localhost:5000/lang/{Language}</code>
+                <code><%= host %>/lang/{Language}</code>
                 <code>Example:</code>
-                <code>http://localhost:5000/lang/es</code>
+                <code><%= host %>/lang/es</code>
             </div>
 
             <hr>
             <p>Search by region.</p>
             <p>Fetchs all the countries from a region.</p>
             <div class="code-container">
-                <code>http://localhost:5000/region/{region}</code>
+                <code><%= host %>/region/{region}</code>
                 <code>Example:</code>
-                <code>http://localhost:5000/region/europe</code>
+                <code><%= host %>/region/europe</code>
             </div>
         </div>
     </div>

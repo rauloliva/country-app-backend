@@ -1,6 +1,5 @@
 const router = require('express').Router()
 const http = require('../http/http')
-
 // enabling cross origin CORS-Policy
 router.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*")
