@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Country-App API documentation">
+    <meta name="keywords" content="api, countries, node, express">
+    <meta name="author" content="Raul Oliva" >
+    <link rel="stylesheet" href="styles.css">
+    <title>Country App API</title>
+</head>
+<body>
+    <h1>Country App Endpoints</h1>
+    <div class="container">
+        <h2>This page you show you the available enpoints from the API for you to test.</h2>
+        <div class="endpoints">
+            <p>Search by country name, set the name as a last param in the URI:</p>
+            <div class="code-container">
+                <code>http://localhost:5000/country/{Country-Name}</code>
+                <code>Example:</code>
+                <code>http://localhost:5000/country/mexico</code>
+            </div>
+            <p>The endpoint returns an array with the list of countries that matched the criteria.</p>
+
+            <hr>
+
+            <p>Fetch more information about the country.</p>
+            <div class="code-container">
+                <code>http://localhost:5000/country/all/{Country-Name}</code>
+                <code>Example:</code>
+                <code>http://localhost:5000/country/all/mexico</code>
+            </div>
+            <p>The endpoint is more specific and returns more data.</p>
+
+            <hr>
+            <h3>Fetching the information in a separated way.</h3>
+            <p>Search by language.</p>
+            <p>Returns a list of all native countries by the given language (The language must be ISO 639-1 code).</p>
+            <div class="code-container">
+                <code>http://localhost:5000/lang/{Language}</code>
+                <code>Example:</code>
+                <code>http://localhost:5000/lang/es</code>
+            </div>
+
+            <hr>
+            <p>Search by region.</p>
+            <p>Fetchs all the countries from a region.</p>
+            <div class="code-container">
+                <code>http://localhost:5000/region/{region}</code>
+                <code>Example:</code>
+                <code>http://localhost:5000/region/europe</code>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+:root {
+    /* Color Palettes */
+    --main-color: #233e8b;
+    --secondary-color: #1eae98;
+    --third-color: #a9f1df;
+    --text-color: #ffffc7;
+}
+
+body {
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.container {
+    margin: 3rem 7rem;
+    padding: 1rem 2rem;
+    background-color: var(--secondary-color);
+}
+
+.endpoints {
+    padding: 1rem 3rem;
+}
+
+p, code {
+    display: block;
+    font-size: 1.2em;
+    
+}
+
+code {
+    margin-top: 3px;
+}
+
+.code-container {
+    background-color: #10685b;
+    padding: 1rem;
+    width: fit-content;
+}
+
+hr {
+    background-color: var(--text-color);
+    height: 2px;
+    border: none;
+}
