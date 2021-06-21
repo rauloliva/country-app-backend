@@ -1,9 +1,10 @@
 {
   "name": "country-app-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is an api for countries",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Raul Oliva",
